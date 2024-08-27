@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>IMinder</title>
+    <title>Prophet</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background-color: #f5f5f7; color: #1d1d1f; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0 2rem; text-align: center; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background-color: #f5f5f7; color: #1d1d1f; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0 2rem; text-align: center; flex-direction: column; }
+        .flags { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; margin-top: -4rem; } /* Increased gap and moved flags higher */
+        .flags img { width: 50px; height: 30px; object-fit: cover; } /* Uniform size for all images */
+        .flags img.french-flag { box-shadow: 0 0 15px rgba(0, 122, 255, 0.8); transition: box-shadow 0.3s ease-in-out; } /* Glowing effect for French flag */
         .container { animation: fadeIn 2s ease-in-out; width: 100%; max-width: 500px; }
         .title { font-size: 3rem; font-weight: 600; margin-bottom: 1rem; }
         .subtitle { font-size: 1.3rem; color: #6e6e73; margin-bottom: 2.5rem; }
@@ -17,10 +20,15 @@
     </style>
 </head>
 <body>
+    <div class="flags">
+        <a href="index.html"><img src="flags/france.png" alt="France" class="french-flag"></a>
+        <a href="indexEn.html"><img src="flags/union-jack.png" alt="United Kingdom"></a>
+        <a href="indexSp.html"><img src="flags/spain.png" alt="España"></a>
+    </div>
     <div class="container">
-        <h1 class="title">I Minder</h1>
-        <p class="subtitle">Devinnez l'inconnu</p>
+        <h1 class="title">Prophet</h1>
         <div class="links">
+        <p class="subtitle">Prédisez l'impossible</p>
             <a href="https://taoxadmin.github.io/MindCard/" class="link">MindCard</a>
             <a href="https://taoxadmin.github.io/Passport/" class="link">Passport</a>
             <a href="https://taoxadmin.github.io/MasterPiece/" class="link">MasterPiece</a>
@@ -28,4 +36,3 @@
     </div>
 </body>
 </html>
-
