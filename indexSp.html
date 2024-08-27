@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Prophet</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background-color: #f5f5f7; color: #1d1d1f; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0 2rem; text-align: center; flex-direction: column; }
+        .flags { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; margin-top: -4rem; } /* Increased gap and moved flags higher */
+        .flags img { width: 50px; height: 30px; object-fit: cover; } /* Uniform size for all images */
+        .flags img.french-flag { box-shadow: 0 0 15px rgba(0, 122, 255, 0.8); transition: box-shadow 0.3s ease-in-out; } /* Glowing effect for French flag */
+        .container { animation: fadeIn 2s ease-in-out; width: 100%; max-width: 500px; }
+        .title { font-size: 3rem; font-weight: 600; margin-bottom: 1rem; }
+        .subtitle { font-size: 1.3rem; color: #6e6e73; margin-bottom: 2.5rem; }
+        .links { display: flex; flex-direction: column; gap: 1.5rem; }
+        .link { font-size: 1.2rem; font-weight: 500; color: #007aff; text-decoration: none; padding: 0.8rem 2rem; border: 2px solid #007aff; border-radius: 12px; transition: all 0.3s ease; touch-action: manipulation; }
+        .link:hover { background-color: #007aff; color: #ffffff; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <div class="flags">
+        <a href="index.html"><img src="flags/france.png" alt="France" ></a>
+        <a href="indexEn.html"><img src="flags/union-jack.png" alt="United Kingdom"></a>
+        <a href="indexSp.html"><img src="flags/spain.png" alt="España" class="french-flag"></a>
+    </div>
+    <div class="container">
+        <h1 class="title">Prophet</h1>
+        <p class="subtitle">Adivinar lo desconocido</p>
+        <div class="links">
+            <a href="https://taoxadmin.github.io/MindCard/sp" class="link">MindCard</a>
+            <a href="https://taoxadmin.github.io/Passport/sp" class="link">Passport</a>
+            <a href="https://taoxadmin.github.io/MasterPiece/sp" class="link">MasterPiece</a>
+        </div>
+    </div>
+</body>
+</html>
